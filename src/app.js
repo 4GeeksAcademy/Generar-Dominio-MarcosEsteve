@@ -8,14 +8,13 @@ window.onload = function() {
   inputElemento.addEventListener("input", function(event) {
       iteraciones = event.target.value;
       const seleccionaOtro = document.querySelector("#seleccionaotro");
-      if (iteraciones > pronoun.length) {
-          seleccionaOtro.innerHTML = "Introduce otro número";  
-      } else {
-          seleccionaOtro.innerHTML = "Has seleccionado " +iteraciones*3+ " dominios.";  
-      }
+      if (iteraciones > pronoun.length){ 
+        seleccionaOtro.innerHTML = "Introduce otro número";} 
+      else seleccionaOtro.innerHTML = "Has seleccionado " +iteraciones*3+ " dominios.";  
+    
   }); // Cierre correcto del event listener
 
-  function GenerarDominio(primero, segundo, tercero) {
+  function generarDominio(primero, segundo, tercero) {
       let Dominio = "";
       let contador = 0;
       for (let i = 0; i < primero.length; i++) {
@@ -41,6 +40,6 @@ window.onload = function() {
       return contador;
   }
 
-  document.querySelector("#dominios").innerText = GenerarDominio(pronoun, adj, noun);
+  document.querySelector("#dominios").innerText = generarDominio(pronoun, adj, noun);
   document.querySelector("#conteo").innerText = cuenta(pronoun, adj, noun);
 };
