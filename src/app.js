@@ -1,11 +1,16 @@
-/* eslint-disable */
-import "bootstrap";
-import "./style.css";
+let pronoun = ["the", "our"];
+let adj = ["great", "big"];
+let noun = ["jogger", "racoon"];
 
-import "./assets/img/rigo-baby.jpg";
-import "./assets/img/4geeks.ico";
-
-window.onload = function() {
-  //write your code here
-  console.log("Hello Rigo from the console!");
-};
+function GenerarDominio(primero, segundo, tercero) {
+  let Dominio = "";
+  for (let i = 0; i < primero.length; i++) {
+    for (let j = 0; j < segundo.length; j++) {
+      for (let x = 0; x < tercero.length; x++) {
+        Dominio += primero[i] + segundo[j] + tercero[x] + ".com\n";
+      }
+    }
+  }
+  return Dominio;
+}
+console.log(GenerarDominio(pronoun, adj, noun));
