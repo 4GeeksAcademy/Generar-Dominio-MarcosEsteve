@@ -45,10 +45,15 @@
       <div class="row">
         <div class="col-4 rounded border border-info-subtle p-3 ">
         <i class="fa-solid fa-screwdriver-wrench"></i> <h3>Los dominios disponibles son:</h3>
-        <p>En total hay: <span id= "conteo">Tantos</span></p>  
+        <div class="input-group flex-nowrap">
+          <span class="input-group-text" id="addon-wrapping">Nº</span>
+          <input type="text" class="form-control" id = "inputusuario" placeholder="Introduce un número..." aria-label="Username" aria-describedby="addon-wrapping">
+        </div>
+        <p>En total hay: <span id= "conteo">Tantos</span></p>
+        <p id="seleccionaotro"></p>  
       </div>
         <div class="col-4 border rounded border-info-subtle" >
-        <p id = "dominios">Hola pinches</p>
+        <p id = "dominios"></p>
         </div>
         <div class="col-4">
           <!-- Contenido adicional aquí -->
