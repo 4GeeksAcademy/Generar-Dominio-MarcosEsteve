@@ -1,3 +1,5 @@
+
+window.onload = function() {
 let pronoun = ["the", "our"];
 let adj = ["great", "big"];
 let noun = ["jogger", "racoon"];
@@ -14,3 +16,13 @@ function GenerarDominio(primero, segundo, tercero) {
   return Dominio;
 }
 console.log(GenerarDominio(pronoun, adj, noun));
+  document.querySelector("#dominios").innerText = "Hola";
+  let parrafo = document.querySelector("#excusa");
+  parrafo.innerHTML = generar_excusa();
+  document.getElementById("botonexcusa").addEventListener("click", function() {
+    parrafo.innerHTML = generar_excusa();
+  });
+  
+};
+
+
