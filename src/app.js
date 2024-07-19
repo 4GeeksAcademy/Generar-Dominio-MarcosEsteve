@@ -12,7 +12,7 @@ window.onload = function() {
         seleccionaOtro.innerHTML = "Introduce otro número";} 
       else seleccionaOtro.innerHTML = "Has seleccionado " +iteraciones*3+ " dominios.";  
     
-  }); // Cierre correcto del event listener
+  }); 
 
   function generarDominio(primero, segundo, tercero) {
       let Dominio = "";
@@ -28,7 +28,7 @@ window.onload = function() {
       return Dominio;
   }
 
-  function cuenta(primero, segundo, tercero) {
+  function cuentaDominios(primero, segundo, tercero) {
       let contador = 0;
       for (let i = 0; i < primero.length; i++) {
           for (let j = 0; j < segundo.length; j++) {
@@ -41,5 +41,5 @@ window.onload = function() {
   }
 
   document.querySelector("#dominios").innerText = generarDominio(pronoun, adj, noun);
-  document.querySelector("#conteo").innerText = cuenta(pronoun, adj, noun);
+  document.querySelector("#conteo").innerText = cuentaDominios(pronoun, adj, noun);
 };
