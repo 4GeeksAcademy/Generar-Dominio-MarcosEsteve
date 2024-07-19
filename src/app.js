@@ -20,7 +20,7 @@ window.onload = function() {
       for (let i = 0; i < primero.length; i++) {
           for (let j = 0; j < segundo.length; j++) {
               for (let x = 0; x < tercero.length; x++) {
-                  Dominio += primero[i] + segundo[j] + tercero[x] + ".com\n";
+                  Dominio += primero[i] + segundo[j] + tercero[x] + ".com\n"+"\n";
                   contador += 1;
               }
           }
